@@ -12,7 +12,7 @@
     
     <header class="cabeça">
 
-        <h1>To-Do List:</h1>
+        <h1>To-Do List</h1>
         <br>
         <input type="text" placeholder="Insira aqui os seus afazeres" id="itemLista">
         <button onclick="addTarefa()">Adicionar tarefa</button>
@@ -31,7 +31,7 @@
                 tarefa.innerHTML = document.getElementById("itemLista").value;
                 
                 var remover = document.createElement("a");
-                remover.innerHTML = "Remover";
+                remover.innerHTML = "X";
                 remover.setAttribute("href", "javascript:;"); // apenas para parecer um link
                 remover.onclick = function() {
                     // remove apenas "tarefa", que é o li
