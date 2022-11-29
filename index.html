@@ -9,20 +9,26 @@
     <title>To-do List</title>
 </head>
 <body>
-    
-    <header class="cabeça">
 
-        <h1>To-Do List</h1>
-        <br>
-        <input type="text" placeholder="Insira aqui os seus afazeres" id="itemLista">
-        <button onclick="addTarefa()" id="btnclick">Adicionar tarefa</button>
-        
-        <main class="corpo-cabeça">
-            <ul id="ul"></ul>
-        </main>
+    <header id="Principal">
+
+        <header class="cabeça">
+
+            <h1>To-Do List</h1>
+            <br>
+            <input type="text" placeholder="Insira aqui os seus afazeres" id="itemLista">
+            <button onclick="addTarefa()" id="btnclick">Adicionar tarefa</button>
+            
+            <main class="corpo-cabeça">
+                <ul id="ul"></ul>
+            </main>
+    
+        </header>
 
     </header>
 
+
+    
     <script>
         var itemLista = document.getElementById("ul");
         function addTarefa() {
