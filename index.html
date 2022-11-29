@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="midia/favicon/favicon.ico" type="image/x-icon">
     <title>To-do List</title>
 </head>
 <body>
@@ -31,8 +31,8 @@
                 tarefa.innerHTML = document.getElementById("itemLista").value;
                 
                 var remover = document.createElement("a");
-                remover.innerHTML = "X";
-                remover.setAttribute("href", "javascript:;"); // apenas para parecer um link
+                remover.innerHTML = "Remover";
+                remover.setAttribute("href", "javascript:;"); // apenas para parecer um link               
                 remover.onclick = function() {
                     // remove apenas "tarefa", que é o li
                     itemLista.removeChild(tarefa);
